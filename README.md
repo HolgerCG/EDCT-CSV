@@ -2,6 +2,10 @@
 Carpeta donde se sube la evidencia del trabajo investigativo realizado y sus respectivos pdfs
 Drive de los pdfs:
 https://drive.google.com/drive/folders/1O1_HLG_gdnw2SsonTF27uNdMBO-D4GRo
+
+Tabla de datos:
+https://docs.google.com/spreadsheets/d/1iQQdc4Zjy5da-wLUNmEpQfc6pfwg8Kq5kNNjsUTBviw/edit#gid=1199665979
+
 Imagen referencial de la tabla con la informacion para la investigacion.
 ![image](https://github.com/HolgerCG/ESTADO-DEL-ARTE-ECONOMIA/assets/108628020/6cdeec3f-f5cb-4aa7-9b99-e762bff06291)
 Evidencia del drive con los pdfs trabajados
