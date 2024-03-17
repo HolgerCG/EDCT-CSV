@@ -1,0 +1,379 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{LA ROBÓTICA EN LA INDUSTRIA ECUATORIANA: UN ANÁLISIS COMPARATIVO A NIVEL GLOBAL\\
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Holger Centeno Guaman}
+\IEEEauthorblockA{\textit{Ingeniería Telemática} \\
+\textit{Universidad Técnica Estatal}\\
+de Quevedo\\
+Quevedo, Ecuador \\
+hcentenog@uteq.edu.ec}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Linley San Pedro Cevallos}
+\IEEEauthorblockA{\textit{Ingeniería Telemática} \\
+\textit{Universidad Técnica Estatal}\\
+de Quevedo\\
+Quevedo, Ecuador \\
+lsanpedroc@uteq.edu.ec}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Solange Villaroel Intriago}
+\IEEEauthorblockA{\textit{Ingeniería Telemática} \\
+\textit{Universidad Técnica Estatal}\\
+de Quevedo\\
+Quevedo, Ecuador \\
+svillarroeli@uteq.edu.ec}
+}
+
+\maketitle
+
+\begin{abstract}
+El avance de la tecnología robótica está constantemente en aumento, y su integración en la sociedad se vuelve cada vez más evidente, sus usos están siendo desarrollados en diferentes áreas que van desde la salud, educación, agricultura y más. Así también, la robótica ha sido un impulso para otras áreas como es la inteligencia artificial, la automatización de procesos, interfaces hombre-máquina, entre otros.
+Ecuador también se encuentra entre los países que han desarrollado la robótica en diferentes áreas, y así también, la ha implementado en la educación de muchos estudiantes, a pesar de esto, es evidente que el país presenta deficiencias para alcanzar un ámbito competitivo a otros países con mayor desarrollo en esta tecnología.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+robótica, ecuador, inteligencia artificial, automatización, robots
+\end{IEEEkeywords}
+
+\section{Introducción}
+
+En los últimos años, la róbotica se ha encontrado trabajando con la Inteligencia Artificial (IA), el Aprendizaje Automático (ML) y el Aprendizaje Profundo (DL), las cuales están desempañando grandes avances en la creación y uso de robots, permitiéndoles trabajar de manera más eficiente, segura e inteligente. Algunas de sus aplicaciones incluyen navegación autónoma, reconocimiento y manipulación de objetos, procesamiento del lenguaje natural, entre otro \cite{Soori2023}.
+
+Por otro lado, la Inteligencia Artificial en conjunto con los robots han podido convertirse en un enfoque de mucho beneficio para personas con diferentes condiciones, como lo son personas con trastorno del espectro autista (TEA), donde la interacción humano-robot (HRI) se ha convertido en ayuda muy grande en la capacitación de CwASD (Children with Autism Spectrum Disorder o Niños con Trastorno del Espectro Autista) para reducir sus discapacidades autistas, entre más implicaciones en diferentes áreas \cite{Islam2023}. 
+
+Las tecnologías robóticas se encuentran en constante avance y desarrollo, además, mientras que su uso este cada vez más consolidado en la sociedad y en las distintas áreas que forman parte de ella, se necesitan tener bases más intelectuales, seguras y confiables \cite{Koditschek2021}. En Ecuador, el impacto de las tecnologías robóticas presenta un panorama importante que se muestra tanto en oportunidades como desafíos. Así también, el país enfrenta la tarea de integrar estas tecnologías de manera que impulse el desarrollo industrial y responda a las necesidades con las que cuenta. Por ende, la presente investigación se centra en un análisis comparativo de la implementación de la robótica en Ecuador frente a tendencias globales, con el objetivo de identificar brechas, oportunidades de mejora y posibles vías para la adaptación tecnológica innovadora en los sectores ecuatorianos.
+
+De acuerdo a Lozada-Martínez et al. (2021), quienes desarrollaron el tema sobre la neurocirugía robótica y de cómo este es un campo innovador que cuenta con muchos beneficios, señala que en América Latina no se cuenta con una evidencia de la calidad de la misma. Además, se enfoca en enfermedades neurológicas como los accidentes cerebrovascular (ACV) y el neurotrauma, también destaca la falta de estudios para medir con precisión la ocurrencia de estas condiciones en la región mencionada \cite{Neurosurgery}. 
+
+Por otro lado, según Brambilla et al. (2023), en su estudio el cual examina el impacto de la robótica en los países Argentina, Brasil y México durante el período de 2004 a 2016, se mencionan diversos temas, como el desempleo, el impacto en la demanda de mano de obra y más. También menciona la amplia gama de actividades que pueden realizar robots modernos como soldadura, pintura, ensamblaje, empaquetado, etiquetado y transporte con alta velocidad y precisión, diferenciándose de los avances tecnológicos que surgieron anteriormente\cite{Brambilla2023} .
+
+El estudio de Cornejo(2023) ofrece una revisión exhaustiva de la robótica industrial a nivel latinoamericano, destacando su integración con tecnologías como la industria 4.0 y la inteligencia artificial. Quiroz Vallejo(2021) examinó la integración del Pensamiento Computacional en la educación en América Latina, con un énfasis en la robótica educativa. En el contexto ecuatoriano, Cevallos(2018) detalló un sistema de control remoto para ensamblaje mediante robots industriales, mientras que Gallo(2020) desarrolló algoritmos de control para una plataforma robótica omnidireccional. Moldes(2019) investigó la cirugía robótica pediátrica en América del Sur, aunque sin mencionar específicamente a Ecuador. Finalmente, Egana-delSol(2022) abordó el impacto de la automatización en la pérdida de empleos de mujeres en América Latina, subrayando la importancia de medidas para garantizar la equidad de género en el empleo.
+
+Es notable la escasez de documentos científicos en cuanto a la robótica implementada en Ecuador, ya que existen varias investigaciones, pero se encuentran enfocadas en otros países de Latinoamérica o del resto del mundo. Además, no se identificó una investigación que aportará una comparación sobre la robótica en el Ecuador con los demás países, ya sea en un área en específico o en diversas, como se ha realizado en este estudio, donde se muestra un panorama mundial de la robótica relacionado al Ecuador. El presente artículo ofrece un análisis comparativo sobre la integración y desarrollo de la robótica en la industria ecuatoriana en un contexto global. Explorando el panorama actual de la robótica en el sector industrial ecuatoriano, se examinan sus avances, desafíos y oportunidades en comparación con estándares internacionales. Mediante un enfoque meticuloso, se busca identificar las áreas de fortaleza y las posibles brechas, ofreciendo perspectivas valiosas para el crecimiento y la competitividad del sector en el ámbito global.
+
+\section{Objetivos de la Investigación}
+
+\subsection{Objetivo General}
+
+Realizar una investigación exhaustiva sobre la robótica, sus diferentes aplicaciones y avances, comparando estos datos entre el Ecuador y el resto del mundo.
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+\item Conocer la situación actual del Ecuador en el área de la robótica y sus avances en ella a través de los años.
+\item Analizar la brecha tecnológica que existe entre Ecuador y otros países en los diferentes ámbitos en los que trabaja la robótica.
+\item Concluir en que formas el Ecuador puede reducir la brecha tecnológica y capacitar más a los ciudadanos sobre la robótica.
+
+\end{itemize}
+
+\section{Trabajos relacionados}
+
+En la investigación realizada por Cornejo et al. (2023), se desarrolló un estudio internacional que muestra la primera revisión general latinoamericana de la robótica industrial, colaborativa y móvil hasta el año 2023. También se llevó a cabo un análisis del estado del arte sobre la Mecatrónica y la Robótica en América del Norte, América Central y América del Sur, destacando logros en la academia, industria, gobierno y emprendimientos, se exploraron las ventajas y potencialidades de empresas líderes en robótica, así como su integración con tecnologías como la industria 4.0, la fabricación digital y la inteligencia artificial \cite{Cornejo2023}.
+
+Quiroz-Vallejo et al. (2021), también realizó su respectiva indagación sobre la integración del Pensamiento Computacional (CT) en la educación primaria y secundaria en América Latina, a través de una revisión de la literatura sobre estudios que fueron publicados entre 2006 y 2020. Es dividido en dos categorías principales: conceptualizaciones de CT y estrategias para su integración. También se destaca que la robótica educativa y los lenguajes de programación por bloques son las estrategias más utilizadas en esta región \cite{Quiroz}.
+
+En cuanto a la robótica en Ecuador, existen diferentes proyectos o robots realizados en el país, como lo es el sistema de control y monitoreo remoto para un proceso de ensamblaje mediante un robot industrial, donde Cevallos et al. (2018) detalla los procesos de ensamblaje, las características de los robots industriales, entre otros temas \cite{Cevalloss2018}. En otro ámbito, también fue realizado un trabajo enfocado en desarrollar y probar algoritmos de control para supervisar el movimiento autónomo de una plataforma robótica omnidireccional con cuatro ruedas mecanum, además, para llevar a cabo esta tarea, se usó la técnica llamada Hardware en el Bucle (HIL), la cual permite simular el comportamiento del sistema en tiempo real, incluso cuando el hardware físico no se encuentra disponible. Este último fue realizado por Gallo et al. (2020) \cite{Gallo}.
+
+Las cirugías asistidas por robots, son una técnica avanzada y mínimamente invasiva, donde su uso ha crecido desde 2002. Moldes et al. (2019) realizó la búsqueda de diferentes ventajas y dificultades sobre la Cirugía Robótica Pediátrica en América del Sur, donde basándose en encuestas realizadas encontró un total de 52 equipos robóticos activos en América Latina, además desarrollo información más detallada sobre estos datos basándose en diferentes países pertenecientes a la región, pero sin Ecuador siendo mencionado \cite{Moldes}.
+
+Por otro lado, también se investigó la pérdida de empleos de mujeres en latino américa debido a la automatización, Egana-delSol et al. (2022) describe que esta transformación podría aumentar las desigualdades de género en el mercado laboral, con mujeres enfrentando un mayor riesgo de automatización que los hombres. Además, menciona que es necesario tomar medidas para abordar estas diferencias y garantizar una mayor equidad de género en el empleo \cite{Egana}.
+
+\section{Revisión de la Literatura}
+\subsection{Estado Actual de la Robótica a Nivel Global}
+La robótica encuentra su origen en la literatura de ciencia ficción, a partir de ello se comenzó a utilizar en aplicaciones industriales, y más recientemente se implementó en el área quirúrgica de modo comercial \cite{Hockstein2007}. Hace alrededor de 25 años, se dio un paso trascendental en la robótica, cuando se logró utilizar un robot por primera vez en el quirófano y este se encargó de colocar agujas en una biopsia cerebral. Desde entonces, la robótica en cirugía ha ido creciendo de manera exponencial \cite{Shah2015}
+
+En la actualidad, a nivel mundial, la robótica ha aumentado significativamente en el hogar, esto una vez que ya se ha generalizado en el ámbito profesional, comenzando con la industria. Por otro lado, también ha sido implantada en multitud de escuelas y universidades alrededor del mundo, siendo impulsada por la Inteligencia artificial. Esto demuestra que los robots han dejado de ser autómatas preprogramados a ser tecnologías que aprenden junto a nosotros \cite{Castro2018}.
+
+\subsubsection{Desarrollos tecnológicos}
+
+Los desarrollos tecnológicos son considerados como el gestor de innovación en sectores de importancia en la sociedad, tales como el industrial, agrícola, económico, educación, ensamblaje y otros, haciendo mención a (Mody, 2021) donde nos menciona que la innovación parte del desarrollo e implementación de nuevas tecnologías que ayuden al cambio de las personas para una mejora de calidad de vida y sus derivados \cite{Mody2021}.
+
+El desarrollo va de la mano con innovaciones \cite{Malerba2020}, es como así la industria en su mayoría ha optado por anclar mejoras de uso de robótica en sus diferentes sectores, el desarrollo de nuevas tecnologías en Industrias 4.0 es un punto clave para la innovación, se tienen nuevas tecnologías como IIoT (internet industrial de las cosas), cloud computing, fabricación aditiva, big data – minería de datos y análisis, inteligencia artificial, cobots, diseño asistido por computadora (CAD), fabricación y control, sonorización, sistemas cibernéticos físicos, entre otros mencionados \cite{Sharma2020}.
+
+Gracias a estos desarrollos podemos argumentar la rápida proliferación de la robótica en la industria y a su vez su crecimiento exponencial, sus avances, capacidades, aprendizaje automático que a su vez le permitan realizar tareas complejas para los humanos \cite{Backer2018}.
+Otra rama que en la actualidad está tomando cada vez más relevancia, de acuerdo a como vaya avanzando, es la robótica humanoide, que está asociada con disciplinas que van desde la ciencia e ingeniería, hasta ámbitos de dominios sociales, legales, y éticos. Al diseñar y construir uno de estos robots, es fundamental proporcionar capacidades sensoriomotoras, y así también promover nuevas técnicas y métodos que ayuden a aplicarse a robots que proporcionen tareas más específicas \cite{Fukuda2017}.
+
+\subsubsection{Aplicaciones industriales}
+La robótica industrial ha sido crucial en el último siglo, emergiendo desde la década de 1950. Se puede clasificar en cuatro generaciones cronológicas: La primera generación de robots industriales (1950-1967) eran máquinas programables sin capacidad de controlar tareas o comunicarse con el entorno, con hardware básico y sin controladores de servomotores. La segunda generación (1968-1977) eran básicas, con capacidades limitadas de adaptación y reconocimiento del entorno. La tercera generación (1978-1999) tenía una interacción mejorada con el operador y el entorno mediante interfaces complejas. La cuarta generación, desde los 2000 hasta hoy, presenta robots inteligentes capaces de estrategias complejas \cite{Gasparetto2019}.
+El uso de robots en sectores es una adaptación de tecnología de manera innovadora, las aplicaciones industriales de estos son variadas, pues se desarrollan en sectores como manufactura, minería, automotriz, alimentos, transporte, control de calidad, pruebas y otros se fue dando gracias a la adopción de estos \cite{Sherwani2020}, donde no solo se concentran en sectores industriales, existen robots para sector económico, transporte, electrónica, química y alimentos, además previa la adopción de estas tecnologías se deben llevar a cabo un análisis de los factores de implementación para cada industria o país \cite{Backer2018}.
+La robótica avanzada y su conexión a visión computarizada es de gran ayuda al progreso de la industria 4.0, es así que las aplicaciones de estas tecnologías tienen un mayor potencial de capacidades con la robótica en el sector e industria \cite{Javaid2021}, se hace un enfoque en que la automatización impacta diversos sectores de manera positiva, desde la manufactura hasta la agricultura y salud, ayudando con tareas demandantes y mejorando eficiencia de procesos, vehículos autónomos, robots en minería y sistemas de seguridad, a continuación se presenta en el \textit{\textbf{cuadro I}} las aplicaciones de la robotica en la industria en base a la literatura que se revisó \cite{Goel2020}:
+
+ 
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Sector}}                                  & \multicolumn{1}{c|}{\textbf{Aplicación}}                                                                                             \\ \hline
+Manufactura                                                            & Automatización, control visual de estándares.                                                                                        \\ \hline
+Vehículos autónomos                                                    & \begin{tabular}[c]{@{}l@{}}Uso en minería, manufactura, \\ agricultura, logística,etc.\end{tabular}                                  \\ \hline
+Ciudado de Salud                                                       & \begin{tabular}[c]{@{}l@{}}Monitore, fabricación de medicamentos, \\ cirugías, trabajos con químicos.\end{tabular}                   \\ \hline
+Ensamblaje                                                             & \begin{tabular}[c]{@{}l@{}}Ensamble de componentes electrónicos y \\ diseño.\end{tabular}                                            \\ \hline
+Embalaje                                                               & \begin{tabular}[c]{@{}l@{}}Empaquetado de productos de consumo, lácteos, \\ carnes, etc.\end{tabular}                                \\ \hline
+Minería                                                                & \begin{tabular}[c]{@{}l@{}}Robots operados para excavaciones, obtención \\ detallada de una mina y sus características.\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Militar y Seguridad\\ pública\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Drones, soporte de batalla, monitoreo de áreas\\ peligrosas.\end{tabular}                                 \\ \hline
+Supermercados                                                          & Asistencia durante las compras, movilización.                                                                                        \\ \hline
+Agricultura                                                            & Tractores autónomos.                                                                                                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Construcción e \\ impresión 3D\end{tabular} & \begin{tabular}[c]{@{}l@{}}Aplicación en construcción, y en proceso de \\ impresión a escala 3D.\end{tabular}                        \\ \hline
+Música                                                                 & \begin{tabular}[c]{@{}l@{}}Robot capaz de escuchar música, interpretar e \\ interactuar.\end{tabular}                                \\ \hline
+\end{tabular}
+    \caption{Aplicación de la robótica en la industria}
+\end{table}
+\subsubsection{Tendencias de uso de la robótica }
+A través de Google Trends podemos observar diferentes tendencias que existen a nivel mundial, así como las regiones donde un tema es más investigado y más. En la siguiente tabla de datos recopilados el 25 de febrero del 2024, se muestran diferentes datos de este tipo, todos en la misma categoría, y en búsquedas web tales como se muestran en el \textit{\textbf{cuadro II }}para su respectiva visualización.
+
+
+\begin{table}[]
+\begin{tabular}{|ccll|}
+\hline
+\multicolumn{4}{|c|}{\textit{\textbf{Búsquedas realizadas el 25 de Febrero del 2024}}} \\ \hline
+\multicolumn{1}{|c|}{\textit{\textbf{\begin{tabular}[c]{@{}c@{}}Término \\ de \\ búsqueda\end{tabular}}}} &
+  \multicolumn{1}{c|}{\textit{\textbf{\begin{tabular}[c]{@{}c@{}}Tiempo de \\ búsqueda\\ establecido\end{tabular}}}} &
+  \multicolumn{1}{c|}{\textit{\textbf{\begin{tabular}[c]{@{}c@{}}Mayores \\ zonas \\ con interés\end{tabular}}}} &
+  \multicolumn{1}{c|}{\textit{\textbf{\begin{tabular}[c]{@{}c@{}}Consultas \\ relacionadas\\ más frecuentes\end{tabular}}}} \\ \hline
+\multicolumn{1}{|c|}{Robótica} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 7 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. Bolivia\\ 2. Venezuela\\ 3. Brazil\\ 4. Colombia\\ 5. Honduras\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. astronomia\\ online\\ 2. tarifa luz hoy\\ 3. ultimas tendencias\\ 4. o que é \\ pensamento\\ computacional\\ 5. en qué consiste\\ una\\ postura adecuada\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{Robotics} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 30 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. China\\ 2. Singapur\\ 3. Sudáfrica\\ 4. Estados \\ Unidos\\ 5. Canadá\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. halo robotics\\ 2. rr stock\\ 3. ims robotics\\ 4. innok robotics\\ 5. fingertech \\ robotics\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Inteligencia\\ Artificial\end{tabular}} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 7 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. Colombia\\ 2. Venezuela\\ 3. Ecuador\\ 4. Bolivia\\ 5. El Salvador\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. app para desnudar\\ inteligencia artifical\\ descagar\\ 2. claude ai\\ 3. o que é \\ inteligencia\\ artifical\\ 4. inteligência \\ artificial\\ chat\\ 5. dali inteligencia\\ artificial\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Artificial\\ Itelligence\end{tabular}} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 30 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. Etiopía\\ 2. Zimbabue\\ 3. Ghana\\ 4. Filipinas\\ 5. Kenia\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. \\ maxtechonline.com\\ artificial intelligence\\ quantum computing\\ 2. \\ observadorpoliti-\\ co.net\\ 3. xxtech.online\\ 4. cometadigital,org\\ 5. jjnoticias.com\\ surviving global \\ economic\\ crises and recessions\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Automatización\\ de procesos\end{tabular}} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 7 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. Guatemala\\ 2. Ecuador\\ 3. Colombia\\ 4. México\\ 5. Perú\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. google academico\\ 2. cultura digital\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Process\\ automation\end{tabular}} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Últimos \\ 30 días\end{tabular}} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1. Santa Elena\\ 2. Corea \\ del Sur\\ 3. Ghana\\ 4. Malasia\\ 5. Singapur\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}1. process \\ automation\\ solutions gmbh\\ 2. robotic process\\ automation in \\ financial \\ services\\ 3. business process\\ automation solutions\\ 4. cognitive process\\ automation\\ 5. business process\\ automation services\end{tabular} \\ \hline
+\end{tabular}
+    \caption{TENDENCIAS DE LA ROBÓTICA ALREDEDOR DEL MUNDO.}
+    \label{tab:my_label}
+\end{table}
+
+En la actualidad, es común conocer acerca de los robots domésticos, estos realizan ciertas labores del hogar de modo autónomo, del mismo modo pueden ser utilizados en educación, entretenimiento e incluso en terapia. La clasificación de este tipo de robots se puede simplificar a: De interiores, como para limpiar suelos, en seguridad, entre otros. Otra clase son los robots de exterior, que ayudan a limpiar jardines, piscinas, etc. También, existe el tipo de robots de juego, donde se incluyen los robots humanoides y mascotas electrónicas. Y por último los robots sociales, cuyo uso se encuentra en educar, brindar compañía y más  \cite{Castro2018}. 
+
+Otra tendencia que se observa en la actualidad es la robótica educativa, la cual tiene el objetivo de enseñar a los alumnos el proceso de construcción y programación de robots, donde cuando los jóvenes estudiantes ensamblan activamente los robots y realizan otras actividades relacionadas, esto resulta de utilidad para que logren probar sus hipótesis siendo de ayuda en la resolución de problemas y razonamiento \cite{Ching2023}.
+
+Algunos trabajos recientes de investigación sobre la robótica:
+
+\begin{itemize}
+\item \textbf{Diseño y validación de un robot de biopsia de próstata de mano paralelo 2R1T no parásito con centro de movimiento remoto.} 
+\end{itemize}
+
+En el presente, se están incrementando la utilización de robots conectados a tierra para intervenciones en operaciones de próstata que sean mínimamente invasivas, esto con el fin de obtener mejores resultados clínicos, aunque cuenta con desventajas de su gran tamaño y alto costo, lo cual hacen que su popularidad se reduzca. Este robot cuenta con 3 grados de libertad con centro de movimiento remoto, logrando la flexibilidad de los dispositivos portátiles y gran precisión \cite{Jiang2024}.
+
+\begin{itemize}
+\item \textbf{Análisis de espacio de trabajo, singularidad y destreza de un robot SDelta de seis grados de libertad con una plataforma de base ortogonal.} 
+\end{itemize}
+SDelta es un robot que cuenta con tres extremidades y 6 grados de libertad, permitiendo lograr operaciones de alta velocidad debido a su arquitectura simple.  Este trabajo investigativo propone una nueva base donde su base sea octogonal en forma de cubo, además, se proporcionan parámetros de diseño con el objetivo de un espacio de trabajo libre de problemas \cite{Toz2024}.
+
+\begin{itemize}
+\item \textbf{Vigilancia de ciudades inteligentes: robot de reconocimiento facial con tecnología de punta basado en aprendizaje profundo.} 
+\end{itemize}
+Debido al rápido avance tecnológico que ha venido dándose recientemente en los últimos años, el desarrollo de vigilancia avanzada ha despertado un gran interés en cuanto a las ciudades inteligentes. Los sistemas de vigilancia han logrado una gran transformación debido a la aparición de la tecnología de punta, internet de las cosas y el aprendizaje profundo, este trabajo muestra un robot de vigilancia inteligente para automóviles que muestra una alta capacidad de respuesta en tiempo real además de otras ventajas \cite{Medjdoubi2024}.
+
+\subsubsection{Robots Sociales}
+El uso de robots sociales influye en el entorno, de manera que estos también necesitan una parte de reconocimiento del entorno, y ahí es donde nace el concepto de hacer uso de HRI conocido como Human – Robot Interaction, pues se encarga de mantener de manera continua un proceso de comunicación, al inicio, durante y al final de algún proceso especifico que realice el robot, haciendo énfasis, que estos se usan gracias a la aceptación de expertos y padres de familia \cite{Tekerek2009}.
+
+
+La interacción entre robots y el ser humano, llega a ser una manera innovadora de obtener nuevas capacidades \cite{Johal2020}, pues a lo largo del tiempo estos han sido usados para realizar trabajos repetitivos con gran riesgo y a lo largo de la revolución económica e industrial han ganado gran avance, a pesar de esto se hace énfasis a que la enseñanza y capacitación de esta sea de manera oportuna pues ayuda en la innovación tecnológica \cite{Broadbent2017}, dando un gran peso a que tecnologías nuevas y de alto impacto haciendo uso de tecnologías sean de gran ayuda para países subdesarrollados como Ecuador, quien a pesar de las investigaciones realizadas, sus hallazgos muestran que estamos aún lejos de mantener un entorno altamente competitivo.
+
+Así también, en Ecuador se han realizado capacitaciones acerca de la robótica, una de ellas fue impulsada por el Ministerio de Educación y la Organización de Estados Iberoamericanos, donde se adquirieron kits de robótica con el objetivo de implementar proyectos, capacitándose alrededor de 50 docentes \cite{OEI2023}.
+
+\subsection{Investigaciones Previas sobre Robótica en Ecuador}
+\subsubsection{Uso Actual de Robótica en Ecuador}
+Algunos ejemplos de implementación de robótica en el Ecuador son:
+\begin{itemize}
+\item Robots implementados para la trifecta y pentafecta en una operación de nefrectomía parcial laparoscópica realizada en ecuatorianos en el Hospital Carlos Andrade Marín: En donde, de los 64 pacientes con quienes se realizó el estudio, se concluyó que la trifecta fue realizada en 34 personas, es decir un 53,12\%, y la pentafecta en 15 pacientes, con un 29,4\% \cite{Salgado2024}.
+
+\item LOLY 1.0 un robot con torso interactivo, enfocado a ayuda de aprendizaje en niños con trastorno del espectro autista, una propuesta interactiva que mezcla juegos y tecnología para el aprendizaje en base a una base de datos con juegos interactivos enfocados a la ayuda de los niños con TEA \cite{Paillacho2021}.
+\end{itemize}
+
+\subsubsection{Desafíos y Oportunidades}
+
+La falta de adopción de Tecnologías de la Información y Comunicación (TIC) en América Latina muestra una brecha digital que puede causar desigualdades económicas, Ecuador presenta rasgos de brechas digitales similares a las observadas en países en desarrollo a nivel internacional \cite{Hector2015} . Esto afecta el progreso de la robótica industrial y el crecimiento económico de Ecuador, limitando su capacidad para utilizar tecnologías avanzadas y afectando su competitividad e innovación en áreas importantes.
+
+En Ecuador uno de los desafíos es el uso de tecnologías robóticas en el campo de la educación. Los robots educativos apoyan la creatividad y otras habilidades de aprendizaje necesarias en el siglo XXI, promueven la colaboración y la creación de redes entre docentes que pueden ser parte del desarrollo futuro del movimiento de robótica educativa \cite{Galindo2021}.
+
+Un riesgo notorio que trae la automatización, es la posible pérdida de empleos, en donde Ecuador no ha realizado estudios para determinar cuáles son las posibles labores que se van a perder debido a ello, por ende, para analizar esta idea es necesario comparar investigaciones con otros países latinoamericanos con los cuales se comparten características similares con respecto a la cultura, economía, etc. A pesar de ello, es de mencionar que las áreas que cuentan con una mejor proyección para próximos años son la mecatrónica y robótica, ya que ambas ramas harán posible el crear fábricas inteligentes que sean de utilidad para procesos más rápidos en el nuevo paradigma de la productividad \cite{Marcel2019}.
+
+En la industria del petróleo y el gas, sus mayores desafíos están en los sectores de producción y exploración. Estos desafíos han creado la necesidad de incrementar el nivel de automatización mediante la introducción de operaciones remotas combinadas con robótica, que se ha convertido en la mejor opción para la inspección, mantenimiento y control en tiempo del módulo de producción \cite{Naranjo2018}.
+
+El avance de la robótica ha sido el motor detrás del surgimiento de la Industria 4.0, que abarca una amplia gama de aplicaciones, como la producción robotizada interactiva, la colaboración entre robots en entornos de fabricación, la capacidad de adaptación y flexibilidad de los robots en los procesos de fabricación, así como la integración de inteligencia artificial en los robots industriales\cite{Bahrin2016}. La adopción de la Industria 4.0 en Ecuador requiere una estrategia integral que incluya la formación de una fuerza laboral capacitada para enfrentar los desafíos y aprovechar las oportunidades de la era digital.
+
+\subsubsection{Vacíos en la Investigación}
+
+El sector de exportación floral es crucial para la economía ecuatoriana, pero la falta de innovación, eficiencia en procesos y aspectos básicos afectan negativamente a su competitividad en el mercado, según investigaciones previas \cite{Guaita}. Se sugiere enfocarse en innovación tecnológica e implementar automatización, formación de personal, certificaciones de calidad, optimización de logística, y otras labores que forman parte de la Industria 4.0, tales labores se mencionan pueden cumplirse con robots colaborativos\cite{Goel2020}. 
+
+En Latinoamérica es necesaria la adopción de la Industria 4.0 en organizaciones, este cambio no solo implica cambio de tecnologías, capacitación y aceptación en trabajadores, compromiso logístico y operativo, también el de conocimientos de estrategias para países en desarrollo \cite{Cordero2023}.
+
+Una de las posibles soluciones sobre aumentar la competitividad e innovación en un país, es el aumento de inversión en investigación y desarrollo, incorporar nuevas tecnologías, impulsar el aprendizaje de la nueva era, son propuestas que han dado frutos en otros países, tales como China con su implementación de robots en industrias\cite{Cheng2019}.
+
+\section{Metodología}
+
+Para la revisión de literatura se han tomado ciertos factores para tener un claro concepto de la comparación a nivel global en la robótica ecuatoriana frente a el concepto internacional. Para esta investigación se tomó en cuenta algunos factores como la estructura mencionada por (Kitchenham, 2007), dando asi los detalles de la siguiente manera.
+
+\subsection{Diseño del estudio: }
+
+Se utilizó un diseño de análisis comparativo para examinar la implementación y el impacto de la robótica en Ecuador frente a tendencias globales. Gracias a este enfoque se dió la justificación para que la investigación tenga la capacidad de identificar las oportunidades de mejora y de ser posible la adaptación tecnológica e innovadora en los sectores industriales en Ecuador.
+
+\subsection{Población y muestra:}
+
+La población objetivo de la investigación no solo se incluyeron empresas de sectores industriales, si no de sectores clave en Ecuador que usan la tecnología robótica como ayuda o netamente automatizado. La muestra se seleccionó mediante un enfoque no mixto que combina muestreo no probabilístico y muestreo por conveniencia. El primero fue para identificar los casos significativos y que sirvan de ayuda en la investigación, por tanto, el siguiente se enfocó en facilitar la recolección de datos a disposición de los investigadores, en este caso nosotros.
+
+\subsection{Selección de Fuentes y Bases de Datos:}
+
+La investigación realizada se basó en la consulta de una variedad de bases de datos académicas y científicas, incluyendo IEEE Xplore, Scopus, Web of Science y Google Scholar. Se utilizaron estas bases para la identificación de los estudios y artículos científicos relevantes en el tema de la Robótica en la Industria Ecuatoriana y a nivel Global. Para esta selección se empleó un enfoque de búsqueda con palabras como “industrial robotics”, “robotic technologies in Ecuador”, “advances in robotics” y “robotics applications in industries”.
+
+\subsection{Criterios de Inclusión y Descarte:}
+
+Para la investigación,  se incluyeron estudios publicados en los últimos 6 años para asegurar su relevancia y actualidad. Además, se consideraron documentos como sitios de noticias o revistas que mencionaran aplicaciones robóticas en la industria ecuatoriana. La información relevante se destacó en las siguientes secciones de acuerdo con su pertinencia para la investigación. Se descartaron artículos que no proporcionaban el texto completo, así como aquellos de difícil acceso sin suscripción (especialmente los más recientes). También se excluyeron aquellos que no se centraron en proporcionar un contexto sobre las aplicaciones industriales de la robótica.
+
+\subsection{Estrategia de búsqueda:}
+
+Para la búsqueda de la información se llevaron a cabo dos fases. La primera consistió en una búsqueda preliminar para identificar palabras clave y temas de alta relevancia, con el propósito de contextualizar la robótica y sus avances. La segunda fase implicó una búsqueda detallada sobre las palabras clave en combinación, tal como se muestran en la sección de fuentes y bases de datos.
+
+\subsection{Análisis de datos:}
+
+Para el análisis de datos se centró en enfocarse a fuentes de información disponibles dándonos así la estructura:
+
+
+\subsubsection{Análisis de informes sectoriales y Literatura académica}
+
+Se realizó un análisis documental de los informes de la industria ecuatoriana y de los estudios académicos disponibles. Esto incluyó la extracción de datos relevantes sobre la implementación de la robótica en los sectores industriales, la identificación de tendencias tecnológicas y la comparación de estas tendencias con las observadas a nivel global.
+
+\subsubsection{Análisis Estadístico de datos secundarios}
+
+Se aplicó el análisis a las fuentes de datos secundarios para evaluar la prevalencia y las características de la implementación de la robótica en la industria en el contexto de Ecuador, comparándolo con otros países o regiones donde estas tecnologías estén más extendidas.
+
+\section{Resultados y discusión}
+
+VI-A Resultados integrados
+
+Presentamos los resultados en secciones claramente definidas que reflejen los objetivos de la investigación, cada una acompañada de gráficos, tablas y otros elementos visuales para facilitar la comprensión. Los hallazgos incluyeron la adopción de la tecnología en Ecuador, comparaciones con los estándares globales y la discusión sobre los desafíos y oportunidades que tiene el país.
+
+VI-B. Resultados bibliometricos ´
+
+En la revisión sistemática actual, se llevó a cabo un análisis estadístico preliminar de las particularidades de los archivos evaluados con el fin de realizar una evaluación crítica. A continuación, se muestran los resultados de este análisis.
+
+\begin{table}{%
+\centering
+
+\begin{tabular}{| l | l | l |}
+\hline
+\textbf{Documentos} & \textbf{N°}& \textbf{\%} \\
+\hline
+Publicaciones web & 3 & 6.97\\
+\hline
+Artículos & 40& 93.02\\
+\hline
+\textbf{Total} & 43& 100 \\
+\hline
+
+\end{tabular}%}
+\caption {CUADRO DE ARCHIVOS REVISADOS}
+\end{table}
+En el \textit{\textbf{cuadro }\textbf{III} }en la revisión sistemática del presente estudio se contemplaron: 43 artículos. 
+
+\begin{table}{%
+\centering
+
+\begin{tabular}{| l | l | l |}
+\hline
+\textbf{Año de publicación} & \textbf{N°}& \textbf{\%} \\
+\hline
+2007 & 1 & 2,32\\
+\hline
+2009 & 1 & 2,32\\
+\hline
+2014 & 1 & 2,32\\
+\hline
+2015 & 1 & 2,32\\
+\hline
+2016 & 1 & 2,32\\
+\hline
+2017 & 2 & 4,65\\
+\hline
+2018 & 4& 9,3\\
+\hline
+2019 & 4& 9,3\\
+\hline
+2020 & 5 & 11,62\\
+\hline
+2021 & 7& 16,27\\
+\hline
+2022 & 1& 2,37\\
+\hline
+2023 & 13& 30,23\\
+\hline
+2024 & 2 & 4,65\\
+\hline
+\textbf{Total} & \textbf{43}& \textbf{100} \\
+\hline
+
+\end{tabular}%}
+\caption {CUADRO DE DISTRIBUCIÓN DE FUENTES}
+\end{table}
+Los documentos escogidos para examinar de manera sistemática esta literatura fueron publicados en los últimos 17 años y se reparten de la forma que se indica en el \textit{\textbf{cuadro IV}}.
+
+\subsection{Casos de éxito y desafiós}
+En este apartado se observa como la implementación de la robótica en Ecuador ha ganado un peso de importancia para futuras innovaciones. Se presentan los datos mas destacables para la interpretación.
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|l|} \hline 
+\textbf{Empresa} & \textbf{Sector} & \textbf{Robot Usado} & \textbf{Beneficios} & \textbf{Desafíos}  &Ref\\ \hline 
+\begin{tabular}[c]{@{}c@{}}Eva\\  Engineering\end{tabular} & Manufactura & KUKA & \begin{tabular}[c]{@{}c@{}}Aumento en\\ producción,\\ Evaluación\end{tabular} & \begin{tabular}[c]{@{}c@{}}Requiere la\\  capacitación \\ especializada.\end{tabular}  & \cite{Forbes2023}\\ \hline 
+Investigación & \begin{tabular}[c]{@{}c@{}}Medicina, \\ investigación\end{tabular} & 2R1T & \begin{tabular}[c]{@{}c@{}}Intervención de\\ operaciones\end{tabular} & \begin{tabular}[c]{@{}c@{}}Tamaño y costo,\\ no tan popular\end{tabular}  & \cite{Jiang2024}\\ \hline 
+\begin{tabular}[c]{@{}c@{}}General Motors\\ GM-OBB\\ Ecuador\end{tabular} & Manufactura & Robot AGV & \begin{tabular}[c]{@{}c@{}}Optimización \\ de procesos\\ a través de \\ Big Data, \\ \\ Automatización\end{tabular} & \begin{tabular}[c]{@{}c@{}}Costos de \\ maquinarias\\ e\\ implementación, \\ capacitación\\ especializada, \\ costos de \\ mantenimiento\end{tabular}  & \cite{Vistazo2023}\\ \hline 
+Investigación & Académica & SDelta & \begin{tabular}[c]{@{}c@{}}Logra \\ operaciones con\\ alta velocidad,\\ 6 grados de \\ libertad,\\ 3 brazos.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Arquitectura \\ simple, solo se\\ propone como \\ base para \\ investigaciones \\ futuras.\end{tabular}
+  & \cite{Toz2024} \\\hline
+  \end{tabular}%
+}
+
+\caption{Cuadro de desafíos y beneficios en robots implementados en Ecuador}
+\end{table}
+
+Como se puede observar en el \textit{\textbf{cuadro V}} hemos seleccionado las empresas y algunas investigaciones que son de gran ayuda en la investigación. Podemos interpretar que pese a la implementación de robots en manufactura como lo es (GM - OBB), hacemos un enfásis a los costos de capaciatación y de implementación, pues para estos no solo se deben llevar a cabo capacitaciones sencillas. Las capacitaciones rigurosas hacen que la implementación de estos robots en los sectores sea mas factible. Pero a criterio personal las empresas en su mayor parte del tiempo ven la capacitación como algo que no sea remunerado. De cierta manera el integrar estas tecnologías en el sector si han ayudado a aumentar procesos, gracias a la Big Data y la automatización de procesos. Estos son claves para la siguiente sección donde se toman en cuenta estas tendencias de innovación. Además, se puede acotar que las investigaciones académicas nutren e impulsan la creatividad y desarrollo para implementar estas nuevas tecnologías en el contexto ecuatoriano. Se abordan los desafíos económicos y de estructura propias del país, que a su vez se espera mejoren a futuro.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{Penafecta.png}
+    \caption{Otros robots implementados en Ecuador}
+    \label{fig:enter-label}
+\end{figure}
+La \textbf{\textit{figura 1}} presenta los resultados obtenidos a partir de la implementación de robots para llevar a cabo procedimientos relacionados con la trifecta y pentafecta en el Hospital Carlos Andrade Marín \cite{Salgado2024}. Estos datos revelan el impacto significativo que la introducción de la robótica ha tenido en la eficiencia y los resultados clínicos en este entorno hospitalario. El análisis detallado de estos resultados proporciona una visión clara de los beneficios tangibles que la tecnología robótica puede aportar a la práctica médica, destacando su potencial para mejorar la precisión, reducir los tiempos de recuperación y elevar la calidad de la atención al paciente.
+\subsection{Tendencias y oportunidades}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Tendencia actualizada.png}
+    \caption{Tendencia de búsqueda e ínteres  con temas de Robótica y afines basado en Google Trends}
+    \label{fig:enter-label}
+\end{figure}
+A continuación se muestra el gráfico con las tendencias con afinidad en robótica, automatización de procesos e inteligencia artificial, pues estas son bases clave para la implementación innovadora en las empresas y de forma creativa para que los estudiantes desarrollen nuevas capacidades.
+Como se puede observar en la \textit{\textbf{figura 2}}, la tendencia de búsqueda frente a otras países es bastante significativa, de forma resumida hemos escogido los valores de búsqueda obtenidos en Google Trends y bajo un analísis hemos recolectado esa información. Dicha información puede ser revisada en el Cuadro I, de tal manera que de forma global se encuentran listados los paises de dicho cuadro.
+\bibliographystyle{ieeetr}
+\bibliography{biblio}
+
+\end{document}
